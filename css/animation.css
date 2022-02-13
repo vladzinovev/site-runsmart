@@ -1,0 +1,33 @@
+/*создаем анимацию сердцу*/
+
+@keyframes heartbeat{
+    0% {
+        transform: scale(1);
+    }
+    
+    30%{
+        transform: scale(1.2);
+    }
+    40%{
+        transform: scale(1.4);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    60%{
+        transform: scale(1.4);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*стили для анимация сердца*/
+.heart{
+    animation-name: heartbeat;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
